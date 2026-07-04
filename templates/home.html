@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+
+</head>
+<body>
+
+<header>
+
+    <nav>
+
+        <h2 class="logo">Portfolio</h2>
+
+        <ul>
+
+            <li><a href="#home">Home</a></li>
+
+            <li><a href="#about">About Me</a></li>
+
+            <li><a href="/learnmore">Learn More</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<section id="home" class="hero">
+
+    <div class="hero-text">
+
+        <h1>Hello, I'm</h1>
+
+        <h2>Meenakshi</h2>
+
+        <h3>AI & Machine Learning Student</h3>
+
+        <p>
+            Welcome to my personal portfolio website.
+            I love Artificial Intelligence, Machine Learning,
+            Python Development and Web Development.
+        </p>
+
+        <a href="{{ url_for('learnmore') }}" class="btn">Learn More</a>
+
+    </div>
+
+</section>
+
+
+<section id="about">
+
+    <h1>About Me</h1>
+
+    <div class="card">
+
+        <p><b>Name:</b> Meenakshi</p>
+        <p><b>Degree:</b> B.Tech AIML</p>
+        <p><b>College:</b> JMIETI</p>
+        <p><b>Email:</b> your@email.com</p>
+        <p><b>Location:</b> India</p>
+
+    </div>
+
+    <div class="card">
+
+
+        <p>
+
+            I am an enthusiastic AI & Machine Learning student
+            passionate about Python programming, Data Science,
+            Deep Learning, Computer Vision, NLP, and Web Development.
+
+            I enjoy solving real-world problems through technology
+            and continuously learning new skills.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<section id="projects">
+
+    <h1>Projects</h1>
+
+    <div class="project-container">
+
+        <div class="project">
+
+            <h2>Student Performance Predictor</h2>
+
+            <p>
+                Machine Learning model to predict student performance.
+            </p>
+
+        </div>
+
+        <div class="project">
+
+            <h2>Stress Level Prediction</h2>
+
+            <p>
+                AI project to predict stress using social media usage.
+            </p>
+
+        </div>
+
+        <div class="project">
+
+            <h2>Goodreads Web Scraper</h2>
+
+            <p>
+                Flask + BeautifulSoup project to scrape book details.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="contact">
+
+    <h1>Contact Me</h1>
+
+
+    <div class="card">
+
+        <p>Email : your@email.com</p>
+
+        <p>Phone : +91-XXXXXXXXXX</p>
+
+        <p>LinkedIn : linkedin.com/in/yourname</p>
+
+        <p>GitHub : github.com/yourname</p>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>© 2026 Meenakshi | Portfolio</p>
+
+</footer>
+
+</body>
+</html>

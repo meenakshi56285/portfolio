@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flipkart Products</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background:#f5f5f5;
+            padding:30px;
+        }
+
+        h1{
+            text-align:center;
+            color:#2874F0;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            background:white;
+            box-shadow:0 0 10px rgba(0,0,0,.2);
+        }
+
+        th{
+            background:#2874F0;
+            color:white;
+            padding:15px;
+        }
+
+        td{
+            padding:12px;
+            text-align:center;
+            border-bottom:1px solid #ddd;
+        }
+
+        tr:hover{
+            background:#f1f1f1;
+        }
+
+        img{
+            width:120px;
+            height:120px;
+            object-fit:contain;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<h1>Flipkart Shoes Data</h1>
+
+<table>
+
+<tr>
+    <th>Image</th>
+    <th>Brand</th>
+    <th>Price</th>
+    <th>Discount</th>
+</tr>
+
+{% for product in products %}
+
+<tr>
+
+    <td>
+        <img src="{{ product.image_url }}" alt="Product">
+    </td>
+
+    <td>{{ product.brand }}</td>
+
+    <td>{{ product.price }}</td>
+
+    <td>{{ product.discount }}</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+</body>
+</html>

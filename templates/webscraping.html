@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Scraping Projects</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/webscraping.css') }}">
+</head>
+
+<body>
+
+<header>
+    <h1>Web Scraping Projects</h1>
+    <p>Select a category to explore.</p>
+</header>
+
+<section class="cards">
+
+    <div class="card">
+        <h2>📄 Static Web Scraping</h2>
+        <p>Projects using Requests and BeautifulSoup.</p>
+
+        <a href="/staticscraping" class="btn">
+            View Static Projects
+        </a>
+    </div>
+
+    <div class="card">
+        <h2>⚡ Dynamic Web Scraping</h2>
+        <p>Projects using Selenium for JavaScript websites.</p>
+
+        <a href="/dynamicscraping" class="btn">
+            View Dynamic Projects
+        </a>
+    </div>
+
+    <div class="card">
+        <h2>🌐 API Scraping</h2>
+        <p>Projects using REST APIs and JSON data.</p>
+
+        <a href="/apiscraping" class="btn">
+            View API Projects
+        </a>
+    </div>
+
+</section>
+
+<div class="center">
+    <a href="/learnmore" class="btn">← Back</a>
+</div>
+
+</body>
+</html>

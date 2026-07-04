@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Static Web Scraping</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body{
+    background: linear-gradient(135deg,#f4f7fc,#dfe9f3);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading{
+    text-align:center;
+    margin:40px 0;
+}
+
+.heading h1{
+    color:#0d6efd;
+    font-weight:bold;
+}
+
+.heading p{
+    color:#555;
+}
+
+.card{
+    border:none;
+    border-radius:20px;
+    transition:0.4s;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.25);
+}
+
+.card-header{
+    color:white;
+    font-size:22px;
+    font-weight:bold;
+    text-align:center;
+}
+
+.flipkart{
+    background:#2874F0;
+}
+
+.amazon{
+    background:#131921;
+}
+
+.goodreads{
+    background:#6b4f4f;
+}
+
+.spotify{
+    background:#1DB954;
+}
+
+.finance{
+    background:#6f42c1;
+}
+
+.card-body{
+    text-align:center;
+    padding:30px;
+}
+
+.card-body p{
+    color:#555;
+}
+
+.btn-custom{
+    border-radius:30px;
+    padding:10px 25px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="heading">
+<h1>Static Web Scraping Projects</h1>
+<p>Select any project to view scraped data.</p>
+</div>
+
+<div class="row g-4">
+
+<!-- Flipkart -->
+<div class="col-md-4">
+<div class="card h-100">
+<div class="card-header flipkart">
+Flipkart
+</div>
+
+<div class="card-body">
+<h5>Flipkart Product Scraping</h5>
+<p>
+View scraped products including
+Name, Price, Rating and Reviews.
+</p>
+
+<a href="/flipkart" class="btn btn-primary btn-custom">
+Open Project
+</a>
+
+</div>
+</div>
+</div>
+
+<!-- Amazon -->
+<div class="col-md-4">
+<div class="card h-100">
+<div class="card-header amazon">
+Amazon
+</div>
+
+<div class="card-body">
+<h5>Amazon Product Scraping</h5>
+<p>
+Explore Amazon product information
+using BeautifulSoup.
+</p>
+
+<a href="/amazon" class="btn btn-dark btn-custom">
+Open Project
+</a>
+
+</div>
+</div>
+</div>
+
+<!-- Goodreads -->
+<div class="col-md-4">
+<div class="card h-100">
+<div class="card-header goodreads">
+Goodreads
+</div>
+
+<div class="card-body">
+<h5>Goodreads Books</h5>
+<p>
+Browse scraped book details,
+ratings and authors.
+</p>
+
+<a href="/goodreads" class="btn btn-secondary btn-custom">
+Open Project
+</a>
+
+</div>
+</div>
+</div>
+
+<!-- Spotify -->
+<div class="col-md-6">
+<div class="card h-100">
+<div class="card-header spotify">
+Spotify
+</div>
+
+<div class="card-body">
+<h5>Spotify Songs</h5>
+<p>
+View scraped Spotify songs,
+artists and rankings.
+</p>
+
+<a href="/spotify" class="btn btn-success btn-custom">
+Open Project
+</a>
+
+</div>
+</div>
+</div>
+
+<!-- Finance -->
+<div class="col-md-6">
+<div class="card h-100">
+<div class="card-header finance">
+Finance
+</div>
+
+<div class="card-body">
+<h5>Finance Data</h5>
+<p>
+Explore stock market and financial
+information collected through scraping.
+</p>
+
+<a href="/finance" class="btn btn-primary btn-custom">
+Open Project
+</a>
+
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

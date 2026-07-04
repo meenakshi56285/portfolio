@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Meenakshi Walia</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/learnmore.css') }}">
+</head>
+
+<body>
+
+<header>
+    <h1>My Projects</h1>
+    <p>Click on any project to know more.</p>
+</header>
+
+<section class="about">
+
+    <div class="card">
+        <h2>📘 Minor Project</h2>
+
+        <p>
+            Explore my Minor Project developed during my B.Tech journey.
+        </p>
+
+        <a href="/minorproject" class="btn">View Project</a>
+    </div>
+
+    <div class="card">
+        <h2>🎓 Major Project</h2>
+
+        <p>
+            Explore my AI & Machine Learning based Major Project.
+        </p>
+
+        <a href="/majorproject" class="btn">View Project</a>
+    </div>
+
+    <div class="card">
+        <h2>🌐 Web Scraping</h2>
+
+        <p>
+            Explore my Python, Flask and BeautifulSoup Web Scraping Project.
+        </p>
+
+         <a href="{{ url_for('webscraping') }}" class="btn">
+        View Project
+    </a>
+    </div>
+
+</section>
+
+<div class="center">
+    <a href="{{ url_for('home') }}" class="btn">
+        ← Back to Home
+    </a>
+</div>
+
+</body>
+</html>
