@@ -1,0 +1,99 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+}
+
+body{
+    background:#081b29;
+    color:white;
+}
+
+header{
+    text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    font-size:50px;
+    color:#00abf0;
+}
+
+.about{
+    width:85%;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+
+    padding:40px 0;
+}
+
+.card{
+    background:#112e42;
+    padding:30px;
+    border-radius:15px;
+    transition:.4s;
+    border:2px solid transparent;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    border-color:#00abf0;
+    box-shadow:0 0 20px #00abf0;
+}
+
+.card h2{
+    color:#00abf0;
+    margin-bottom:15px;
+}
+
+.card p,
+.card li{
+    line-height:1.8;
+    font-size:17px;
+}
+
+.card ul{
+    margin-left:20px;
+}
+
+.center{
+    text-align:center;
+    margin:50px 0;
+}
+
+.btn{
+    text-decoration:none;
+    background:#00abf0;
+    color:white;
+    padding:15px 35px;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#0095d9;
+    box-shadow:0 0 20px #00abf0;
+}
+header p{
+    font-size:20px;
+    margin-top:10px;
+    color:#ddd;
+}
+
+.card{
+    text-align:center;
+}
+
+.card .btn{
+    display:inline-block;
+    margin-top:25px;
+}
+
+.card p{
+    margin-bottom:20px;
+}
